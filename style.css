@@ -26,8 +26,8 @@ header {
 }
 
 .header-logo {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     border-radius: 22%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     flex-shrink: 0;
