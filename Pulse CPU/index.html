@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f1">
+    <title>Pulse CPU — A quiet monitor for your Mac | Kind Park</title>
+    <meta name="description" content="Pulse CPU watches Mac processes, estimates CPU use and power draw, and alerts you when your Mac's thermal state rises beyond your chosen limit.">
+    <meta property="og:title" content="Pulse CPU — A quiet monitor for your Mac">
+    <meta property="og:description" content="See which task is working your Mac hard, and get an alert when high use or thermal strain lasts.">
+    <meta property="og:image" content="https://kindpark.app/Pulse%20CPU/images/main.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/app-icon.png">
+    <link rel="stylesheet" href="../studio.css">
+    <link rel="stylesheet" href="pulse.css">
+</head>
+<body class="pulse-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="Kind Park Studio, home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                    <circle cx="29" cy="9" r="4" fill="currentColor" class="brand-sun" />
+                    <path d="M18 22v12M18 25c-5 0-8-3-8-7 0-3 2-5 5-5 1-4 7-5 10-2 4 0 6 3 6 6s-3 5-7 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11 30h19M14 30v4m13-4v4M12 34h17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </span>
+            <span class="brand-name">kind park <span>studio</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="../index.html#work">Selected work</a>
+            <a href="#details">How it works</a>
+            <a class="nav-contact" href="mailto:appspire@icloud.com?subject=Pulse%20CPU">Get in touch</a>
+        </nav>
+
+        <details class="mobile-nav">
+            <summary>Menu</summary>
+            <nav aria-label="Mobile navigation">
+                <a href="../index.html#work">Selected work</a>
+                <a href="#details">How it works</a>
+                <a href="mailto:appspire@icloud.com?subject=Pulse%20CPU">Get in touch</a>
+            </nav>
+        </details>
+    </header>
+
+    <main id="main">
+        <section class="pulse-hero page-section" aria-labelledby="pulse-title">
+            <div class="pulse-hero-copy">
+                <p class="pulse-intro">
+                    <img src="images/app-icon.png" alt="" width="38" height="38">
+                    <span><strong>Pulse CPU</strong><small>A small monitor for macOS</small></span>
+                </p>
+                <h1 id="pulse-title">See what’s making your Mac work hard.</h1>
+                <p class="pulse-lede">Pulse CPU keeps an eye on running tasks, their CPU use, estimated power draw, and your Mac’s thermal state. When a limit stays high, it brings the alert into view.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#details">See how Pulse works</a>
+                    <a class="text-link" href="../index.html#work">Back to selected work</a>
+                </div>
+                <p class="pulse-platform">A native menu bar app for Mac</p>
+            </div>
+            <figure class="pulse-hero-screen">
+                <img src="images/main.png" alt="Pulse CPU’s monitor window showing a thermal state alert, an Xcode CPU alert, and a live list of Mac processes" width="1164" height="1674" fetchpriority="high">
+                <figcaption>The process list and alerts, together.</figcaption>
+            </figure>
+        </section>
+
+        <section class="pulse-detail-band" id="details" aria-labelledby="details-title">
+            <div class="pulse-detail-inner">
+                <div class="pulse-detail-copy">
+                    <p class="section-kicker">Make the limits yours</p>
+                    <h2 id="details-title">Choose what deserves your attention.</h2>
+                    <p>Set a CPU limit, an estimated power threshold, and the amount of time a task must stay over either one before Pulse raises an alert. You can also choose which macOS thermal state should trigger a warning.</p>
+                    <p>CPU and power alerts can be tuned separately. Ignore a noisy task for an hour, a day, or until you remove the rule.</p>
+                    <a class="text-link" href="#capabilities">See what Pulse watches</a>
+                </div>
+                <figure class="pulse-settings-screen">
+                    <img src="images/settings.png" alt="Pulse CPU settings for login launch, alert sound, sampling frequency, CPU and energy limits, thermal state, and alert delay" width="1204" height="2500" loading="lazy">
+                    <figcaption>Adjust thresholds and timing in one place.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="pulse-capabilities page-section" id="capabilities" aria-labelledby="capabilities-title">
+            <div class="pulse-capabilities-heading">
+                <p class="section-kicker">From a glance to an alert</p>
+                <h2 id="capabilities-title">A clearer picture of what’s happening.</h2>
+            </div>
+            <div class="pulse-capability-list">
+                <article>
+                    <h3>Find the busy process</h3>
+                    <p>Sort the live process list by CPU, current estimated power, or accumulated energy to see what is using your Mac’s resources.</p>
+                </article>
+                <article>
+                    <h3>Catch a sustained spike</h3>
+                    <p>Pulse waits for a limit to remain exceeded for your chosen delay, then flags the task with its measured CPU and power context. An optional system sound can play.</p>
+                </article>
+                <article>
+                    <h3>Keep an eye on heat</h3>
+                    <p>Thermal alerts follow the state macOS reports—Fair, Serious, or Critical. macOS does not provide Pulse with a numeric temperature reading.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section pulse-contact" aria-labelledby="pulse-contact-title">
+            <div>
+                <p class="section-kicker">Built for the Mac</p>
+                <h2 id="pulse-contact-title">Less guessing when your Mac gets busy.</h2>
+                <p>Pulse CPU is an independent Kind Park Studio project.</p>
+            </div>
+            <a class="button button-light" href="mailto:appspire@icloud.com?subject=Pulse%20CPU">Talk to Kind Park</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <a class="brand footer-brand" href="../index.html" aria-label="Kind Park Studio, home">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="29" cy="9" r="4" fill="currentColor" class="brand-sun" />
+                        <path d="M18 22v12M18 25c-5 0-8-3-8-7 0-3 2-5 5-5 1-4 7-5 10-2 4 0 6 3 6 6s-3 5-7 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11 30h19M14 30v4m13-4v4M12 34h17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </span>
+                <span class="brand-name">kind park <span>studio</span></span>
+            </a>
+            <p>Thoughtful software for Apple platforms.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Kind Park LLC</p>
+            <div class="footer-links">
+                <a href="../privacy.html">Privacy</a>
+                <a href="../support.html">Support</a>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of use</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

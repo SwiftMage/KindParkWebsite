@@ -1,148 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kind Park LLC - App Studio</title>
-    <link rel="icon" type="image/png" href="images/kindParkLLC.png">
-    <meta property="og:title" content="Kind Park LLC">
-    <meta property="og:description" content="Thoughtfully crafted apps for Apple platforms.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f1">
+    <title>Kind Park Studio — Apple platform software development</title>
+    <meta name="description" content="Kind Park Studio designs and builds thoughtful software for Mac, iPhone, and iPad. Independent Apple platform development, from early idea through release.">
+    <meta property="og:title" content="Kind Park Studio — Apple platform software development">
+    <meta property="og:description" content="Thoughtful software for Mac, iPhone, and iPad, built from first idea through release.">
     <meta property="og:image" content="https://kindpark.app/images/kindParkLLC.png">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/kindParkLLC.png">
+    <link rel="stylesheet" href="studio.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="images/kindParkLLC.png" alt="Kind Park LLC" class="header-logo">
-            <div class="header-text">
-                <h1>Kind Park</h1>
-                <p>Thoughtfully crafted apps for Apple platforms</p>
-            </div>
-        </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Kind Park Studio, home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                    <circle cx="29" cy="9" r="4" fill="currentColor" class="brand-sun" />
+                    <path d="M18 22v12M18 25c-5 0-8-3-8-7 0-3 2-5 5-5 1-4 7-5 10-2 4 0 6 3 6 6s-3 5-7 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11 30h19M14 30v4m13-4v4M12 34h17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </span>
+            <span class="brand-name">kind park <span>studio</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="#work">Selected work</a>
+            <a href="#services">Services</a>
+            <a class="nav-contact" href="#contact">Let’s talk</a>
+        </nav>
+
+        <details class="mobile-nav">
+            <summary>Menu</summary>
+            <nav aria-label="Mobile navigation">
+                <a href="#work">Selected work</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Let’s talk</a>
+            </nav>
+        </details>
     </header>
 
-    <main>
-        <section class="app-grid">
-
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="https://awesomecopy.app">
-                         <img src="images/Awesome-Copy-icon.png" alt="Awesome Copy Icon" class="app-icon">
-                     </a>
+    <main id="main">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="intro-line"><span class="intro-dot" aria-hidden="true"></span> Independent development for Apple platforms</p>
+                <h1 id="hero-title">Your idea,<br>at home on Apple.</h1>
+                <p class="hero-description">Kind Park Studio designs and builds useful, considered software for Mac, iPhone, and iPad—from the first product decisions through release.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#contact">Tell me what you’re building</a>
+                    <a class="text-link" href="#work">See selected work</a>
                 </div>
-                <div class="app-info">
+                <p class="platform-note">macOS <span>/</span> iOS <span>/</span> iPadOS</p>
+            </div>
+
+            <figure class="hero-work">
+                <div class="hero-window">
+                    <div class="window-bar" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                        <p>Awesome Copy <span>·</span> macOS</p>
+                    </div>
+                    <img src="images/awesome-copy-laptop.png" alt="Awesome Copy running on a MacBook, showing its clipboard history grid" width="3220" height="2100" fetchpriority="high">
+                </div>
+                <img class="hero-phone" src="images/awesome-copy-iphone.png" alt="Awesome Copy on iPhone, with clipboard cards for text, images, and files" width="1290" height="2796" fetchpriority="high">
+                <figcaption><span>Made for the details.</span><span>Awesome Copy</span></figcaption>
+            </figure>
+        </section>
+
+        <section class="work-section page-section" id="work" aria-labelledby="work-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Selected work</p>
+                    <h2 id="work-title">Useful ideas,<br>turned into real apps.</h2>
+                </div>
+                <p class="section-intro">These independent products show the range of work behind Kind Park: native Mac utilities, creative tools, and practical apps for everyday life.</p>
+            </div>
+
+            <article class="project project-featured">
+                <a class="project-image project-image-copy" href="AwesomeCopy/index.html" aria-label="Explore Awesome Copy">
+                    <img src="AwesomeCopy/images/drag%20with%20text.png" alt="Awesome Copy’s file drag-and-drop view on macOS" width="2560" height="1600" loading="lazy">
+                </a>
+                <div class="project-copy">
+                    <p class="project-platform">macOS · iOS</p>
                     <h3>Awesome Copy</h3>
-                    <p>A powerful clipboard manager for Mac, iPhone, and iPad. Manage your clipboard history with style and sync across all devices via iCloud.</p>
-                    <a href="https://awesomecopy.app" class="btn-view-app">View Details</a>
+                    <p>A clipboard manager built around a quick menu bar workflow, pinned items, and a visual Copy Stack for files.</p>
+                    <div class="project-links">
+                        <a class="text-link" href="AwesomeCopy/index.html">Explore the project</a>
+                        <a class="text-link" href="https://apps.apple.com/us/app/awesome-copy-clipboard-tool/id6745275375?mt=12" target="_blank" rel="noopener noreferrer">Mac App Store</a>
+                    </div>
                 </div>
+            </article>
+
+            <div class="project-grid">
+                <article class="project project-card project-backly">
+                    <a class="project-image" href="Backly/Backly_site.html" aria-label="Explore Backly">
+                        <img src="Backly/images/screenShots/ai.png" alt="Backly background designer with an image canvas and editing controls" width="2560" height="1600" loading="lazy">
+                    </a>
+                    <div class="project-copy">
+                        <p class="project-platform">macOS</p>
+                        <h3>Backly</h3>
+                        <p>A hands-on image composition tool for custom dimensions, gradients, layers, and background effects.</p>
+                        <a class="text-link" href="Backly/Backly_site.html">Explore the project</a>
+                    </div>
+                </article>
+
+                <article class="project project-card project-paycheck">
+                    <a class="project-image" href="PaycheckSalaryCalculator/index.html" aria-label="Explore Paycheck">
+                        <img src="PaycheckSalaryCalculator/images/panoramic.png" alt="Paycheck app screens for salary calculations, tax estimates, and earnings tracking" width="2178" height="926" loading="lazy">
+                    </a>
+                    <div class="project-copy">
+                        <p class="project-platform">iOS</p>
+                        <h3>Paycheck</h3>
+                        <p>A salary and earnings app that brings take-home estimates, tax breakdowns, and live tracking together.</p>
+                        <a class="text-link" href="PaycheckSalaryCalculator/index.html">Explore the project</a>
+                    </div>
+                </article>
             </div>
 
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="https://dailyaffirmationspowerup.com">
-                         <img src="images/Daily Affirmations Power Up.png" alt="Daily Affirmations Power Up Icon" class="app-icon">
-                     </a>
+            <div class="more-work">
+                <div class="more-work-heading">
+                    <h3>More from the studio</h3>
+                    <p>Small focused products, each built around a clear job.</p>
                 </div>
-                <div class="app-info">
-                    <h3>Daily Affirmations Power Up</h3>
-                    <p>Start your day with positivity and motivation through daily affirmations.</p>
-                    <a href="https://dailyaffirmationspowerup.com" class="btn-view-app">View Details</a>
-                </div>
-            </div>
-
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="PaycheckSalaryCalculator/index.html">
-                         <img src="images/paycheck-salary-icon.png" alt="Paycheck - Salary Calculator Icon" class="app-icon">
-                     </a>
-                </div>
-                <div class="app-info">
-                    <h3>Paycheck - Salary Calculator</h3>
-                    <p>Calculate your take-home pay and understand your salary breakdown with this easy-to-use calculator.</p>
-                    <a href="PaycheckSalaryCalculator/index.html" class="btn-view-app">View Details</a>
-                </div>
-            </div>
-
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="Backly/Backly_site.html">
-                         <img src="images/Image-Background-Designer-Icon.png" alt="Backly - AI Photo Backgrounds Icon" class="app-icon">
-                     </a>
-                </div>
-                <div class="app-info">
-                    <h3>Backly - AI Photo Backgrounds</h3>
-                    <p>Create stunning, custom-sized backgrounds for your images with beautiful gradients and overlays.</p>
-                    <a href="Backly/Backly_site.html" class="btn-view-app">View Details</a>
+                <div class="app-links">
+                    <a class="app-link" href="Pulse%20CPU/index.html">
+                        <img src="Pulse%20CPU/images/app-icon.png" alt="" width="56" height="56" loading="lazy">
+                        <span><strong>Pulse CPU</strong><small>A menu bar monitor for CPU, power, and Mac thermal state</small></span>
+                    </a>
+                    <a class="app-link" href="MegaCalcBox/index.html">
+                        <img src="MegaCalcBox/images/icon.png" alt="" width="56" height="56" loading="lazy">
+                        <span><strong>MegaCalcBox</strong><small>Calculators for everyday decisions</small></span>
+                    </a>
+                    <a class="app-link" href="DailyAffirmationsPowerUpSite/index.html">
+                        <img src="images/Daily Affirmations Power Up.png" alt="" width="56" height="56" loading="lazy">
+                        <span><strong>Daily Affirmations Power Up</strong><small>A thoughtful start to the day</small></span>
+                    </a>
+                    <a class="app-link" href="AwesomeCopyMobile/index.html">
+                        <img src="AwesomeCopyMobile/images/Awesome-Copy-icon.png" alt="" width="56" height="56" loading="lazy">
+                        <span><strong>Awesome Copy Mobile</strong><small>Clipboard tools for iPhone</small></span>
+                    </a>
+                    <a class="app-link" href="https://apps.apple.com/us/app/swing-paint/id6788578266" target="_blank" rel="noopener noreferrer">
+                        <img src="images/SwingPaint-icon.png" alt="" width="56" height="56" loading="lazy">
+                        <span><strong>Swing Paint</strong><small>Expressive, motion-led painting</small></span>
+                    </a>
                 </div>
             </div>
+            <p class="work-note">These are Kind Park products, not client engagements. They’re a look at how I approach product design and development.</p>
+        </section>
 
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="MegaCalcBox/index.html">
-                         <img src="images/MegaCalcBox-icon.png" alt="MegaCalcBox Icon" class="app-icon">
-                     </a>
-                </div>
-                <div class="app-info">
-                    <h3>MegaCalcBox</h3>
-                    <p>35+ professional calculators in your pocket. From managing finances to tracking health - everything you need in one beautiful app.</p>
-                    <a href="MegaCalcBox/index.html" class="btn-view-app">View Details</a>
-                </div>
+        <section class="services-section page-section" id="services" aria-labelledby="services-title">
+            <div class="services-heading">
+                <p class="section-kicker">Ways to work together</p>
+                <h2 id="services-title">One thoughtful partner,<br>from idea to update.</h2>
+                <p>I work directly with founders, small teams, and people with a useful idea to bring to life.</p>
             </div>
-
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="https://songmint.app" target="_blank">
-                         <img src="images/SongMint-icon.png" alt="SongMint Icon" class="app-icon">
-                     </a>
-                </div>
-                <div class="app-info">
-                    <h3>SongMint</h3>
-                    <p>Create personalized, AI-generated songs for any occasion. Perfect for birthdays, weddings, graduations, and heartfelt gifts.</p>
-                    <a href="https://songmint.app" target="_blank" class="btn-view-app">View Website</a>
-                </div>
+            <div class="service-list">
+                <article class="service-item">
+                    <span class="service-mark" aria-hidden="true">A</span>
+                    <div><h3>Product direction</h3><p>Shape the idea, choose a sensible first release, and map the experience before development begins.</p></div>
+                </article>
+                <article class="service-item">
+                    <span class="service-mark" aria-hidden="true">B</span>
+                    <div><h3>Native app development</h3><p>Build in Swift and SwiftUI, using native macOS capabilities and Apple platform patterns across Mac, iPhone, and iPad.</p></div>
+                </article>
+                <article class="service-item">
+                    <span class="service-mark" aria-hidden="true">C</span>
+                    <div><h3>Release and ongoing care</h3><p>Prepare for launch, improve what’s already in market, and keep the product moving forward.</p></div>
+                </article>
             </div>
+        </section>
 
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="https://apps.apple.com/us/app/swing-paint/id6788578266" target="_blank">
-                         <img src="images/SwingPaint-icon.png" alt="Swing Paint Icon" class="app-icon">
-                     </a>
-                </div>
-                <div class="app-info">
-                    <h3>Swing Paint</h3>
-                    <p>A playful painting app for creating colorful, swirling artwork with expressive motion and vibrant paint effects.</p>
-                    <a href="https://apps.apple.com/us/app/swing-paint/id6788578266" target="_blank" class="btn-view-app">View on App Store</a>
-                </div>
+        <section class="about-section page-section" aria-labelledby="about-title">
+            <div class="about-mark" aria-hidden="true">
+                <svg viewBox="0 0 100 100" fill="none">
+                    <circle cx="73" cy="23" r="10" />
+                    <path d="M43 63V88M43 68c-13 0-21-8-21-19 0-8 6-14 14-14 3-11 18-15 27-6 10 0 16 7 16 16s-7 15-19 15M22 79h54M30 79v10m38-10v10M26 89h46" />
+                </svg>
             </div>
-
-            <div class="app-card">
-                <div class="app-image-placeholder">
-                     <a href="https://promodistro.link" target="_blank">
-                         <img src="images/PromoDistro-icon.png" alt="PromoDistro Icon" class="app-icon">
-                     </a>
-                </div>
-                <div class="app-info">
-                    <h3>PromoDistro</h3>
-                    <p>Professional promotional code distribution platform with advanced user tracking. Ensure fair distribution with one code per user through sophisticated fingerprinting.</p>
-                    <a href="https://promodistro.link" target="_blank" class="btn-view-app">View Website</a>
-                </div>
+            <div class="about-copy">
+                <p class="section-kicker">Independent by design</p>
+                <h2 id="about-title">You work directly with the person building your app.</h2>
+                <p>Kind Park Studio is an independent Apple software practice. I build in Swift and SwiftUI, using AppKit when a Mac app needs deeper platform integration. Product thinking, interface decisions, and engineering stay close together from the first conversation.</p>
             </div>
+        </section>
 
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div>
+                <p class="section-kicker">Have a project in mind?</p>
+                <h2 id="contact-title">Let’s make something useful.</h2>
+                <p>Tell me what you’re working on and where you’d like a hand.</p>
+            </div>
+            <a class="button button-light" href="mailto:appspire@icloud.com?subject=Kind%20Park%20Studio%20project">Start a conversation <span aria-hidden="true">↗</span></a>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Kind Park LLC. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <span class="footer-divider">|</span>
-            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use (EULA)</a>
-            <span class="footer-divider">|</span>
-            <a href="support.html">Support</a>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <a class="brand footer-brand" href="#top" aria-label="Kind Park Studio, back to top">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <circle cx="29" cy="9" r="4" fill="currentColor" class="brand-sun" />
+                        <path d="M18 22v12M18 25c-5 0-8-3-8-7 0-3 2-5 5-5 1-4 7-5 10-2 4 0 6 3 6 6s-3 5-7 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11 30h19M14 30v4m13-4v4M12 34h17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </span>
+                <span class="brand-name">kind park <span>studio</span></span>
+            </a>
+            <p>Thoughtful software for Apple platforms.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Kind Park LLC</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="support.html">Support</a>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of use</a>
+            </div>
         </div>
     </footer>
 </body>
