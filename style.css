@@ -60,11 +60,29 @@ main {
 }
 
 /* App Grid Section */
-.app-grid h2 {
+.portfolio-section > h2 {
     text-align: center;
     font-size: 2rem;
     color: #1d1d1f;
     margin-bottom: 2rem;
+}
+
+.portfolio-section + .portfolio-section {
+    margin-top: 4rem;
+    padding-top: 2.75rem;
+    border-top: 1px solid #d2d2d7;
+}
+
+.website-description {
+    max-width: 680px;
+    margin: -1rem auto 2rem;
+    color: #6e6e73;
+    text-align: center;
+}
+
+.website-section .app-grid {
+    max-width: 820px;
+    margin: 0 auto;
 }
 
 .app-grid {
