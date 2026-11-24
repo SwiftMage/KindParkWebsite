@@ -80,45 +80,6 @@ main {
     gap: 1.5rem;
 }
 
-.website-group {
-    grid-column: span 2;
-    min-width: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border: 1px solid #c8dced;
-    border-radius: 18px;
-    background-color: #edf4fb;
-}
-
-.website-group-heading {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0.25rem 1rem;
-}
-
-.website-group-heading h3 {
-    margin: 0;
-    color: #1d1d1f;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.website-group-heading p {
-    margin: 0;
-    color: #6e6e73;
-    font-size: 0.88rem;
-}
-
-.website-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-}
-
 /* App Card Styling */
 .app-card {
     background-color: #ffffff !important;
@@ -201,46 +162,6 @@ main {
 .btn-view-app:hover {
     background-color: #0077ed;
     text-decoration: none;
-}
-
-.website-card {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.website-card .app-image-placeholder {
-    width: 64px;
-    height: 64px;
-    flex: 0 0 64px;
-    padding: 8px;
-    border-radius: 14px;
-}
-
-.website-card .app-image-placeholder img.app-icon {
-    max-width: 100% !important;
-    max-height: 100% !important;
-}
-
-.website-card .app-info {
-    min-width: 0;
-    padding: 0;
-}
-
-.website-card .app-info h3 {
-    font-size: 1.05rem;
-}
-
-.website-card .app-info p {
-    margin-bottom: 0.8rem;
-    font-size: 0.87rem;
-    line-height: 1.45;
-}
-
-.website-card .btn-view-app {
-    align-self: flex-start;
-    padding: 0.5rem 0.9rem;
 }
 
 /* Footer */
@@ -379,13 +300,8 @@ footer p {
 
 /* Responsive Adjustments */
 @media (max-width: 680px) {
-    .app-grid,
-    .website-grid {
+    .app-grid {
         grid-template-columns: 1fr;
-    }
-
-    .website-group {
-        grid-column: 1 / -1;
     }
 }
 
